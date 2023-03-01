@@ -540,6 +540,213 @@ h3 {
     background-color: #FEFAE0;
 }
 
+/* PROGRAMACIÓN */
+.programming h2 {
+    font-size: 2.5rem;
+}
+
+.programming__section h3{
+    text-align: justify;
+    text-indent: 2rem;
+}
+
+.programming__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.programming__container__card {
+    width: 30rem;
+    height: 40rem;
+    background-color: #253151;
+    border-radius: 1rem;
+    border: 2px solid #253151;
+    transition: all 0.4s ease-in;
+    box-shadow: 0.4rem 0.4rem 0.6rem #253151;
+    overflow: hidden;
+    margin: 2rem;
+}
+
+.programming__container__card a {
+    text-decoration: none;
+}
+
+.programming__container__card__img {
+    width: 100%;
+    height: 20rem;
+    margin: 0;
+    border-radius: 1rem;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.programming__container__card__img img {
+    width: auto;
+    height: 100%;
+    transition: all 0.4s ease-in;
+}
+
+.programming__container__card__bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.programming__container__card__bottom__tagContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.programming__container__card__tag {
+    margin: 0.5rem;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    font-size: 1rem;
+    border-radius: 1rem;
+}
+
+.programming__container__card__tag--html {
+    border: 1px solid #0467e9;
+    color: #0467e9;
+}
+
+.programming__container__card__tag--css {
+    border: 1px solid limegreen;
+    color: limegreen;
+}
+
+.programming__container__card__tag--bs {
+    border: 1px solid violet;
+    color: violet;
+}
+
+.programming__container__card__tag--js {
+    border: 1px solid yellow;
+    color: yellow;
+}
+
+.programming__container__card__bottom__description {
+    color: #FEFAE0;
+    font-size: 1.5rem;
+    padding: 1rem;
+    text-align: justify;
+}
+
+.programming__container__card:hover {
+    border: 2px solid #1251a3;
+    border-radius: 2.5rem 0 2.5rem 0;
+}
+
+.programming__container__card:hover .programming__container__card__img img {
+    width: auto;
+    height: 120%;
+}
+
+/* MUSICA */
+.music {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.music__section h3 {
+    text-align: justify;
+    text-indent: 2rem;
+}
+
+.music__carouselContainer {
+    width: 90vw;
+    position: relative;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.carousel-inner {
+    text-align: center;
+}
+
+.music__carouselContainer iframe {
+    justify-self: center;
+    width: 80vw;
+    height: 15rem;
+}
+
+.carousel__control {
+    width: 4rem;
+    height: 4rem;
+    border: none;
+    background-color: inherit;
+    background-size: cover;
+    appearance: none;
+    filter: invert(17%) sepia(13%) saturate(2994%) hue-rotate(186deg) brightness(83%) contrast(86%);
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+.carousel__control--next {
+    background-image: url(../images/icono_flechaDerecha.png);
+    position: absolute;
+    top: 50%;
+    right: 0.5rem;
+}
+
+.carousel__control--prev {
+    background-image: url(../images/icono_flechaIzquierda.png);
+    position: absolute;
+    top: 50%;
+    left: 0.5rem;
+}
+
+.carousel__control img {
+    width: 100%;
+    height: 100%;
+    }
+
+.carousel__control:hover {
+    transform: scale(1.1);
+    transition: 0.4s ease-in-out;
+}
+
+.music__cardContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.programming__container__card__bottom__description p{
+    line-height: 2.5rem;
+}
+
+/* RESUME */
+.resume h3 {
+    text-align: justify;
+}
+
+.resume__container-fluid {
+    margin-top: 2rem;
+    padding: 1rem;
+}
+
+.resume__aside, .resume__section {
+    padding: 1rem;
+    text-align: justify;
+    color: #253151;
+    font-size: 2rem;
+    line-height: 3.5rem;
+    padding: 1rem;
+}
+
+
 @media screen and (min-width: 320px) {
     h2 {
         text-align: center;
@@ -550,16 +757,39 @@ h3 {
     }
 }
 
+@media screen and (min-width: 480px) {
+    .programming h2 {
+        font-size: 3.5rem;
+    }
+
+    .programming__container__card__tag {
+        font-size: 1.5rem;
+    }
+
+    .programming__container__card__img {
+        height: 25rem;
+    }
+
+    .programming__container__card__bottom__description {
+        font-size: 2rem;
+    }
+    
+    .music__carouselContainer iframe {
+        height: 25rem;
+    }
+}
+
 @media screen and (min-width: 768px) {
     /* HEADER */
     .header {
         height: auto;
         display: flex;
         flex-direction: row;
+        padding-right: 0.5rem;
     }
 
     .header__title {
-        width: 35vw;
+        width: 33vw;
     }
 
     .header__title h1 {
@@ -572,7 +802,7 @@ h3 {
     }
 
     .header__nav__ul {
-        width: 65vw;
+        width: 67vw;
         position: relative;
         height: auto;
         display: flex;
@@ -650,6 +880,10 @@ h3 {
         float: right;
         height: 30vh;
         margin-bottom: 1rem;
+    }
+
+    .music__carouselContainer iframe {
+        height: 40rem;
     }
 }
 
@@ -794,5 +1028,9 @@ h3 {
         transform: scale(1.1);
         filter: invert(21%) sepia(70%) saturate(2112%) hue-rotate(201deg) brightness(96%) contrast(92%);
         transition: transform 0.2s;
+    }
+
+    .music__carouselContainer iframe {
+        height: 70rem;
     }
 }
