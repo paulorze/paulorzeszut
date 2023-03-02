@@ -1,0 +1,140 @@
+@use './vars';
+
+@media screen and (min-width: 1200px) {
+    h2 {
+        text-align: left;
+        margin-left: 2rem;
+    }
+
+    .header {
+        height: auto;
+    }
+
+    .header__title {
+        width: 30vw;
+    }
+
+    .header__title:hover h1 {
+        transform: scale(1.1);
+        transition: 0.5s;
+    }
+
+    .header__nav__ul {
+        width: 70vw;
+    }
+
+    .header__nav__ul__li:hover {
+        background-color: vars.$color-highlight;
+    }
+
+    .footer__menu {
+        width: 50%;
+    }
+
+    .footer__menu__ul {
+        width: 100%;
+        height: 100%;
+        justify-content: space-between;
+    }
+
+    .footer__menu__ul__link {
+        width: 100%;
+        height: 100%;
+        padding-bottom: 1rem;
+        padding-top: 1rem;
+        border-radius: 1rem;
+
+        &:hover {
+            background-color: vars.$color-highlight;
+        }
+    }
+
+    .footer__redes {
+        width: 50%;
+    }
+
+    .footer__redes__ul__link:hover {
+        border-radius: 5rem;
+        background-color: vars.$color-highlight;
+    }
+
+    .toggleLanguage:hover {
+        transform: scale(1.1);
+        transition: 0.5s ease-out;
+    }
+
+    .index__container{
+        display: grid;
+        align-items: center;
+        grid-template-columns: 3fr 2fr 2fr 2fr 3fr;
+        grid-template-rows: 4fr 3fr;
+        grid-template-areas: 
+        "index__aside--izquierda index__aside--izquierda index__section--musica index__section--musica index__section--musica"
+        "index__section--programacion index__section--programacion index__section--programacion index__aside--derecha index__aside--derecha"
+        ;
+        column-gap: 1rem;
+        row-gap: 3rem;
+    }
+
+    .index__aside {
+        width: 100%;
+        height: 100%;
+        max-width: none;
+        max-height: none;
+        margin: 0;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .index__aside--izquierda {
+        grid-area: index__aside--izquierda;
+    }
+
+    .index__aside--derecha {
+        grid-area: index__aside--derecha;
+    }
+
+    .index__section--musica {
+        grid-area: index__section--musica;
+    }
+
+    .index__section--programacion {
+        grid-area: index__section--programacion;
+    }
+
+    .fade-in-izq {
+        animation: fadeInIzq 2s ease-in-out;
+    }
+
+    @keyframes fadeInIzq {
+        from {opacity: 0; transform: translate(-100px)}
+        to {opacity: 1; transform: translate(0);}
+    }
+
+    .fade-in-der {
+        animation: fadeInDer 2s ease-in-out;
+    }
+
+    @keyframes fadeInDer {
+        from {opacity: 0; transform: translate(100px)}
+        to {opacity: 1; transform: translate(0);}
+    }
+
+    .contact__section__ul__link {
+        width: 9rem;
+        height: 9rem;
+
+        &:hover {
+            transform: scale(1.1);
+            filter: vars.$filter-highlight;
+            transition: transform 0.2s;
+        }
+    }
+
+    .music__carouselContainer iframe {
+        height: 70rem;
+    }
+}

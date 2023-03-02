@@ -1,0 +1,25 @@
+@use './vars';
+
+.index__section {
+    color: vars.$color-main1;
+    font-size: 2rem;
+    text-align: justify;
+    text-indent: 2rem;
+    line-height: 3rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+}
+
+.index__aside {
+    max-width: 95vw;
+    max-height: 45vh;
+    margin: 1rem;
+    overflow: hidden;
+    border-radius: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 0;
+}

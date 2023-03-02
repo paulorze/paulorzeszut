@@ -1,0 +1,25 @@
+@media screen and (min-width: 480px) {
+    .programming {
+        h2 {
+            font-size: 3.5rem;
+        }
+    }
+
+    .programming__container__card__tag {
+        font-size: 1.5rem;
+    }
+
+    .programming__container__card__img {
+        height: 25rem;
+    }
+
+    .programming__container__card__bottom__description {
+        font-size: 2rem;
+    }
+    
+    .music__carouselContainer {
+        iframe {
+            height: 25rem;
+        }
+    }
+}

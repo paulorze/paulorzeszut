@@ -1,0 +1,13 @@
+@use './vars';
+
+@media screen and (min-width: 320px) {
+    h2 {
+        text-align: center;
+    }
+
+    .header__title {
+        h1{
+        text-align: center;
+        }
+    }
+}

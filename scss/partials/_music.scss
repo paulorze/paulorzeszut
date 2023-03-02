@@ -1,0 +1,81 @@
+@use './vars';
+
+.music {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.music__section {
+    h3 {
+        text-align: justify;
+        text-indent: 2rem;
+    }
+}
+
+.music__carouselContainer {
+    width: 90vw;
+    position: relative;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+
+    iframe {
+        justify-self: center;
+        width: 80vw;
+        height: 20rem;
+    }
+}
+
+.carousel-inner {
+    text-align: center;
+}
+
+.carousel__control {
+    width: 4rem;
+    height: 4rem;
+    border: none;
+    background-color: inherit;
+    background-size: cover;
+    appearance: none;
+    filter: vars.$filter-dark;
+    border: 1px solid white;
+    border-radius: 50%;
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+
+    &:hover {
+        transform: scale(1.1);
+        transition: 0.4s ease-in-out;
+    }
+}
+
+.carousel__control--next {
+    background-image: url(../images/icono_flechaDerecha.png);
+    position: absolute;
+    top: 45%;
+    right: 0.5rem;
+}
+
+.carousel__control--prev {
+    background-image: url(../images/icono_flechaIzquierda.png);
+    position: absolute;
+    top: 45%;
+    left: 0.5rem;
+}
+
+.music__cardContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.programming__container__card__bottom__description {
+    p{
+        line-height: 2.5rem;
+    }
+}

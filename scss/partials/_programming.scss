@@ -1,0 +1,116 @@
+@use './vars';
+
+.programming {
+    h2 {
+        font-size: 2.5rem;
+    }
+}
+
+.programming__section {
+    h3{
+        text-align: justify;
+        text-indent: 2rem;
+    }
+}
+
+.programming__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.programming__container__card {
+    width: 30rem;
+    height: 40rem;
+    background-color: vars.$color-main1;
+    border-radius: 1rem;
+    border: 2px solid vars.$color-main1;
+    transition: all 0.4s ease-in;
+    box-shadow: 0.4rem 0.4rem 0.6rem vars.$color-main1;
+    overflow: hidden;
+    margin: 2rem;
+
+    a {
+        text-decoration: none;
+    }
+
+    &:hover {
+        border: 2px solid vars.$color-highlight;
+        border-radius: 2.5rem 0 2.5rem 0;
+
+        .programming__container__card__img {
+            img {
+                width: auto;
+                height: 120%;
+            }
+        }
+    }
+}
+
+.programming__container__card__img {
+    width: 100%;
+    height: 20rem;
+    margin: 0;
+    border-radius: 1rem;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        width: auto;
+        height: 100%;
+        transition: all 0.4s ease-in;
+    }
+}
+
+.programming__container__card__bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.programming__container__card__bottom__tagContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.programming__container__card__tag {
+    margin: 0.5rem;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    font-size: 1rem;
+    border-radius: 1rem;
+}
+
+.programming__container__card__tag--html {
+    border: 1px solid #0467e9;
+    color: #0467e9;
+}
+
+.programming__container__card__tag--css {
+    border: 1px solid limegreen;
+    color: limegreen;
+}
+
+.programming__container__card__tag--bs {
+    border: 1px solid violet;
+    color: violet;
+}
+
+.programming__container__card__tag--js {
+    border: 1px solid yellow;
+    color: yellow;
+}
+
+.programming__container__card__bottom__description {
+    color: vars.$color-main2;
+    font-size: 1.5rem;
+    padding: 1rem;
+    text-align: justify;
+}

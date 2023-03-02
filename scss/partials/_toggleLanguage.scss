@@ -1,0 +1,15 @@
+@use './vars';
+
+.toggleLanguage {
+    position: absolute;
+    top: 7rem;
+    right: 2rem;
+    width: 6rem;
+    height: 6rem;
+
+    img {
+        width: 100%;
+        height: 100%;
+        filter: vars.$filter-dark;
+    }
+}
