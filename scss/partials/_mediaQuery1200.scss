@@ -60,7 +60,8 @@
 
     .toggleLanguage:hover {
         transform: scale(1.1);
-        transition: 0.5s ease-out;
+        transition: transform 0.5s ease-out;
+        filter: vars.$filter-highlight;
     }
 
     .index__container{
@@ -136,5 +137,19 @@
 
     .music__carouselContainer iframe {
         height: 70rem;
+    }
+
+    .programming__container__card {
+        &:hover {
+            border: 2px solid vars.$color-highlight;
+            border-radius: 2.5rem 0 2.5rem 0;
+    
+            .programming__container__card__img {
+                img {
+                    width: auto;
+                    height: 120%;
+                }
+            }
+        }
     }
 }

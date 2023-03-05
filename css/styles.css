@@ -545,14 +545,6 @@ h3 {
 .programming__container__card a {
   text-decoration: none;
 }
-.programming__container__card:hover {
-  border: 2px solid #2c6cdf;
-  border-radius: 2.5rem 0 2.5rem 0;
-}
-.programming__container__card:hover .programming__container__card__img img {
-  width: auto;
-  height: 120%;
-}
 
 .programming__container__card__img {
   width: 100%;
@@ -868,7 +860,8 @@ h3 {
   }
   .toggleLanguage:hover {
     transform: scale(1.1);
-    transition: 0.5s ease-out;
+    transition: transform 0.5s ease-out;
+    filter: invert(21%) sepia(70%) saturate(2112%) hue-rotate(201deg) brightness(96%) contrast(92%);
   }
   .index__container {
     display: grid;
@@ -939,6 +932,14 @@ h3 {
   }
   .music__carouselContainer iframe {
     height: 70rem;
+  }
+  .programming__container__card:hover {
+    border: 2px solid #2c6cdf;
+    border-radius: 2.5rem 0 2.5rem 0;
+  }
+  .programming__container__card:hover .programming__container__card__img img {
+    width: auto;
+    height: 120%;
   }
 }
 
