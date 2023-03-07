@@ -4,12 +4,30 @@
     h2 {
         font-size: 2.5rem;
     }
-}
 
-.programming__section {
     h3{
         text-align: justify;
         text-indent: 2rem;
+    }
+}
+
+.programming__filter__tags {
+    background-color: #8b8585;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .tag--boton {
+        cursor: pointer;
+        position: relative;
+
+        &:hover {
+            transform: translateX(1px) translateY(1px);
+            transition: all 0.4s ease-in-out;
+        }
     }
 }
 
@@ -31,10 +49,15 @@
     box-shadow: 0.4rem 0.4rem 0.6rem vars.$color-main1;
     overflow: hidden;
     margin: 2rem;
+    display: none;
 
     a {
         text-decoration: none;
     }
+}
+
+.show {
+    display: block;
 }
 
 .programming__container__card__img {
@@ -72,28 +95,23 @@
 .programming__container__card__tag {
     margin: 0.5rem;
     padding: 0.5rem 1rem 0.5rem 1rem;
-    font-size: 1rem;
+    font-size: 1.5rem;
     border-radius: 1rem;
 }
 
-.programming__container__card__tag--html {
-    border: 1px solid #0467e9;
-    color: #0467e9;
-}
+$language-tag: (
+    todo: black,
+    html: #0467e9,
+    css: limegreen,
+    bs: violet,
+    js: yellow
+);
 
-.programming__container__card__tag--css {
-    border: 1px solid limegreen;
-    color: limegreen;
-}
-
-.programming__container__card__tag--bs {
-    border: 1px solid violet;
-    color: violet;
-}
-
-.programming__container__card__tag--js {
-    border: 1px solid yellow;
-    color: yellow;
+@each $language, $color in $language-tag {
+    .tag--#{$language} {
+        border: 1px solid $color;
+        color: $color;
+    }
 }
 
 .programming__container__card__bottom__description {

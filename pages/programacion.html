@@ -99,30 +99,54 @@
             </h2>
             <section class="programming__section">
                 <h3>
-                    Acá abajo podrás ver los que son, a mí parecer, los mejores trabajos
+                    Acá podrás ver los que son, a mí parecer, los mejores trabajos
                     que he logrado hasta la fecha. En cada etiqueta podrás ver una pequeña vista anticipada del proyecto,
                     así como una pequeña descripción del mismo y los lenguajes que utilicé. Si querés ver todos los proyectos
                     en los que participé, te invito a visitar <a href="https://github.com/paulorze" target="_blank">mi GitHub</a>.
                 </h3>
             </section>
+            <section class="programming__filter">
+                <div class="programming__filter__text">
+                    <h3>
+                        Haciendo click en las etiquetas de aquí abajo, vas a poder filtrar mis trabajos por los lenguajes que en ellos utilicé.
+                    </h3>
+                </div>
+                <div class="programming__filter__tags">
+                    <div class="programming__container__card__tag tag--todo tag--boton" onclick="filterObjects('all')">
+                        Mostrar Todo
+                    </div>
+                    <div class="programming__container__card__tag tag--html tag--boton" onclick="filterObjects('html')">
+                        HTML
+                    </div>
+                    <div class="programming__container__card__tag tag--css tag--boton" onclick="filterObjects('css')">
+                        CSS
+                    </div>
+                    <div class="programming__container__card__tag tag--bs tag--boton" onclick="filterObjects('bs')">
+                        BootStrap
+                    </div>
+                    <div class="programming__container__card__tag tag--js tag--boton" onclick="filterObjects('js')">
+                        JS
+                    </div>
+                </div>
+            </section>
             <section class="programming__container">
-                <div class="programming__container__card">
+                <div class="programming__container__card html css bs js">
                     <a href="https://paulorze.github.io/akalialimentos" target="_blank">
                         <div class="programming__container__card__img">
                             <img src="../images/imagen__akaliAlimentos.png" alt="Screenshot del sitio web Akali Alimentos">
                         </div>
                         <div class="programming__container__card__bottom">
                             <div class="programming__container__card__bottom__tagContainer">
-                                <div class="programming__container__card__tag programming__container__card__tag--html">
+                                <div class="programming__container__card__tag tag--html">
                                     HTML
                                 </div>
-                                <div class="programming__container__card__tag programming__container__card__tag--css">
+                                <div class="programming__container__card__tag tag--css">
                                     CSS
                                 </div>
-                                <div class="programming__container__card__tag programming__container__card__tag--bs">
+                                <div class="programming__container__card__tag tag--bs">
                                     BootStrap
                                 </div>
-                                <div class="programming__container__card__tag programming__container__card__tag--js">
+                                <div class="programming__container__card__tag tag--js">
                                     JS
                                 </div>
                             </div>
@@ -134,23 +158,71 @@
                         </div>
                     </a>
                 </div>
-                <div class="programming__container__card">
+                <div class="programming__container__card html">
                     <a href="https://paulorze.github.io/akalialimentos" target="_blank">
                         <div class="programming__container__card__img">
                             <img src="../images/imagen__akaliAlimentos.png" alt="Screenshot del sitio web Akali Alimentos">
                         </div>
                         <div class="programming__container__card__bottom">
                             <div class="programming__container__card__bottom__tagContainer">
-                                <div class="programming__container__card__tag programming__container__card__tag--html">
+                                <div class="programming__container__card__tag tag--html">
                                     HTML
                                 </div>
-                                <div class="programming__container__card__tag programming__container__card__tag--css">
+                            </div>
+                            <div class="programming__container__card__bottom__description">
+                                <p>
+                                    Sitio Web correspondiente a un microemprendimiento de alimentos para mascotas.
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="programming__container__card css">
+                    <a href="https://paulorze.github.io/akalialimentos" target="_blank">
+                        <div class="programming__container__card__img">
+                            <img src="../images/imagen__akaliAlimentos.png" alt="Screenshot del sitio web Akali Alimentos">
+                        </div>
+                        <div class="programming__container__card__bottom">
+                            <div class="programming__container__card__bottom__tagContainer">
+                                <div class="programming__container__card__tag tag--css">
                                     CSS
                                 </div>
-                                <div class="programming__container__card__tag programming__container__card__tag--bs">
+                            </div>
+                            <div class="programming__container__card__bottom__description">
+                                <p>
+                                    Sitio Web correspondiente a un microemprendimiento de alimentos para mascotas.
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="programming__container__card bs">
+                    <a href="https://paulorze.github.io/akalialimentos" target="_blank">
+                        <div class="programming__container__card__img">
+                            <img src="../images/imagen__akaliAlimentos.png" alt="Screenshot del sitio web Akali Alimentos">
+                        </div>
+                        <div class="programming__container__card__bottom">
+                            <div class="programming__container__card__bottom__tagContainer">
+                                <div class="programming__container__card__tag tag--bs">
                                     BootStrap
                                 </div>
-                                <div class="programming__container__card__tag programming__container__card__tag--js">
+                            </div>
+                            <div class="programming__container__card__bottom__description">
+                                <p>
+                                    Sitio Web correspondiente a un microemprendimiento de alimentos para mascotas.
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="programming__container__card js">
+                    <a href="https://paulorze.github.io/akalialimentos" target="_blank">
+                        <div class="programming__container__card__img">
+                            <img src="../images/imagen__akaliAlimentos.png" alt="Screenshot del sitio web Akali Alimentos">
+                        </div>
+                        <div class="programming__container__card__bottom">
+                            <div class="programming__container__card__bottom__tagContainer">
+                                <div class="programming__container__card__tag tag--js">
                                     JS
                                 </div>
                             </div>
@@ -162,24 +234,18 @@
                         </div>
                     </a>
                 </div>
-                <div class="programming__container__card">
+                <div class="programming__container__card html css">
                     <a href="https://paulorze.github.io/akalialimentos" target="_blank">
                         <div class="programming__container__card__img">
                             <img src="../images/imagen__akaliAlimentos.png" alt="Screenshot del sitio web Akali Alimentos">
                         </div>
                         <div class="programming__container__card__bottom">
                             <div class="programming__container__card__bottom__tagContainer">
-                                <div class="programming__container__card__tag programming__container__card__tag--html">
+                                <div class="programming__container__card__tag tag--html">
                                     HTML
                                 </div>
-                                <div class="programming__container__card__tag programming__container__card__tag--css">
+                                <div class="programming__container__card__tag tag--css">
                                     CSS
-                                </div>
-                                <div class="programming__container__card__tag programming__container__card__tag--bs">
-                                    BootStrap
-                                </div>
-                                <div class="programming__container__card__tag programming__container__card__tag--js">
-                                    JS
                                 </div>
                             </div>
                             <div class="programming__container__card__bottom__description">
@@ -190,79 +256,17 @@
                         </div>
                     </a>
                 </div>
-                <div class="programming__container__card">
+                <div class="programming__container__card bs js">
                     <a href="https://paulorze.github.io/akalialimentos" target="_blank">
                         <div class="programming__container__card__img">
                             <img src="../images/imagen__akaliAlimentos.png" alt="Screenshot del sitio web Akali Alimentos">
                         </div>
                         <div class="programming__container__card__bottom">
                             <div class="programming__container__card__bottom__tagContainer">
-                                <div class="programming__container__card__tag programming__container__card__tag--html">
-                                    HTML
-                                </div>
-                                <div class="programming__container__card__tag programming__container__card__tag--css">
-                                    CSS
-                                </div>
-                                <div class="programming__container__card__tag programming__container__card__tag--bs">
+                                <div class="programming__container__card__tag tag--bs">
                                     BootStrap
                                 </div>
-                                <div class="programming__container__card__tag programming__container__card__tag--js">
-                                    JS
-                                </div>
-                            </div>
-                            <div class="programming__container__card__bottom__description">
-                                <p>
-                                    Sitio Web correspondiente a un microemprendimiento de alimentos para mascotas.
-                                </p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="programming__container__card">
-                    <a href="https://paulorze.github.io/akalialimentos" target="_blank">
-                        <div class="programming__container__card__img">
-                            <img src="../images/imagen__akaliAlimentos.png" alt="Screenshot del sitio web Akali Alimentos">
-                        </div>
-                        <div class="programming__container__card__bottom">
-                            <div class="programming__container__card__bottom__tagContainer">
-                                <div class="programming__container__card__tag programming__container__card__tag--html">
-                                    HTML
-                                </div>
-                                <div class="programming__container__card__tag programming__container__card__tag--css">
-                                    CSS
-                                </div>
-                                <div class="programming__container__card__tag programming__container__card__tag--bs">
-                                    BootStrap
-                                </div>
-                                <div class="programming__container__card__tag programming__container__card__tag--js">
-                                    JS
-                                </div>
-                            </div>
-                            <div class="programming__container__card__bottom__description">
-                                <p>
-                                    Sitio Web correspondiente a un microemprendimiento de alimentos para mascotas.
-                                </p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="programming__container__card">
-                    <a href="https://paulorze.github.io/akalialimentos" target="_blank">
-                        <div class="programming__container__card__img">
-                            <img src="../images/imagen__akaliAlimentos.png" alt="Screenshot del sitio web Akali Alimentos">
-                        </div>
-                        <div class="programming__container__card__bottom">
-                            <div class="programming__container__card__bottom__tagContainer">
-                                <div class="programming__container__card__tag programming__container__card__tag--html">
-                                    HTML
-                                </div>
-                                <div class="programming__container__card__tag programming__container__card__tag--css">
-                                    CSS
-                                </div>
-                                <div class="programming__container__card__tag programming__container__card__tag--bs">
-                                    BootStrap
-                                </div>
-                                <div class="programming__container__card__tag programming__container__card__tag--js">
+                                <div class="programming__container__card__tag tag--js">
                                     JS
                                 </div>
                             </div>

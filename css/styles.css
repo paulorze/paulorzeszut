@@ -96,7 +96,7 @@ h3 {
   margin: 0;
   padding: 0;
   width: 100vw;
-  height: 24vh;
+  height: fit-content;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -517,10 +517,27 @@ h3 {
 .programming h2 {
   font-size: 2.5rem;
 }
-
-.programming__section h3 {
+.programming h3 {
   text-align: justify;
   text-indent: 2rem;
+}
+
+.programming__filter__tags {
+  background-color: #8b8585;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.programming__filter__tags .tag--boton {
+  cursor: pointer;
+  position: relative;
+}
+.programming__filter__tags .tag--boton:hover {
+  transform: translateX(1px) translateY(1px);
+  transition: all 0.4s ease-in-out;
 }
 
 .programming__container {
@@ -541,9 +558,14 @@ h3 {
   box-shadow: 0.4rem 0.4rem 0.6rem #253151;
   overflow: hidden;
   margin: 2rem;
+  display: none;
 }
 .programming__container__card a {
   text-decoration: none;
+}
+
+.show {
+  display: block;
 }
 
 .programming__container__card__img {
@@ -580,26 +602,31 @@ h3 {
 .programming__container__card__tag {
   margin: 0.5rem;
   padding: 0.5rem 1rem 0.5rem 1rem;
-  font-size: 1rem;
+  font-size: 1.5rem;
   border-radius: 1rem;
 }
 
-.programming__container__card__tag--html {
+.tag--todo {
+  border: 1px solid black;
+  color: black;
+}
+
+.tag--html {
   border: 1px solid #0467e9;
   color: #0467e9;
 }
 
-.programming__container__card__tag--css {
+.tag--css {
   border: 1px solid limegreen;
   color: limegreen;
 }
 
-.programming__container__card__tag--bs {
+.tag--bs {
   border: 1px solid violet;
   color: violet;
 }
 
-.programming__container__card__tag--js {
+.tag--js {
   border: 1px solid yellow;
   color: yellow;
 }
