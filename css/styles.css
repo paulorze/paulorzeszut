@@ -168,13 +168,14 @@ h3 {
   background-color: #253151;
   border-top: solid grey 0.25rem;
   box-shadow: 1px 1px 10px grey;
+  margin-top: 1rem;
+}
+
+.footer__flexContainer {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  padding: 1rem;
-  margin-top: 1rem;
-  width: 100%;
 }
 
 .footer__menu {
@@ -232,6 +233,7 @@ h3 {
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
+  padding: 0;
 }
 
 .footer__redes__ul__link {
@@ -247,6 +249,18 @@ h3 {
 
 .footer__redes__ul__link:active img {
   filter: invert(68%) sepia(85%) saturate(323%) hue-rotate(338deg) brightness(89%) contrast(93%);
+}
+
+.footer__p {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  padding: 1rem;
+  margin: 0;
+}
+.footer__p a {
+  color: #FEFAE0;
+  text-decoration: none;
 }
 
 .toggleLanguage {
@@ -523,7 +537,8 @@ h3 {
 }
 
 .programming__filter__tags {
-  background-color: #8b8585;
+  background-color: #253151;
+  padding: 0.5rem;
   border-radius: 1rem;
   display: flex;
   flex-direction: row;
@@ -534,10 +549,11 @@ h3 {
 .programming__filter__tags .tag--boton {
   cursor: pointer;
   position: relative;
+  font-weight: bold;
 }
 .programming__filter__tags .tag--boton:hover {
   transform: translateX(1px) translateY(1px);
-  transition: all 0.4s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .programming__container {
@@ -579,7 +595,6 @@ h3 {
   align-items: center;
 }
 .programming__container__card__img img {
-  width: auto;
   height: 100%;
   transition: all 0.4s ease-in;
 }
@@ -607,8 +622,8 @@ h3 {
 }
 
 .tag--todo {
-  border: 1px solid black;
-  color: black;
+  border: 1px solid pink;
+  color: pink;
 }
 
 .tag--html {
@@ -631,6 +646,11 @@ h3 {
   color: yellow;
 }
 
+.tag--php {
+  border: 1px solid red;
+  color: red;
+}
+
 .programming__container__card__bottom__description {
   color: #FEFAE0;
   font-size: 1.5rem;
@@ -642,6 +662,9 @@ h3 {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.music .programming__container__card {
+  width: 25rem;
 }
 
 .music__section h3 {
@@ -699,14 +722,6 @@ h3 {
   left: 0.5rem;
 }
 
-.music__cardContainer {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
 .programming__container__card__bottom__description p {
   line-height: 2.5rem;
 }
@@ -727,6 +742,31 @@ h3 {
   font-size: 2rem;
   line-height: 3.5rem;
   padding: 1rem;
+}
+
+.sitemap h2 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 3rem;
+}
+.sitemap h3 {
+  text-align: justify;
+  text-indent: 2rem;
+}
+.sitemap ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+.sitemap ul li {
+  font-size: 2rem;
+  margin: 1rem;
+}
+
+.sitemap__aside__h2, .sitemap__section__h2 {
+  text-align: center;
 }
 
 @media screen and (min-width: 320px) {
@@ -752,6 +792,12 @@ h3 {
   }
   .music__carouselContainer iframe {
     height: 25rem;
+  }
+  .music .programming__container__card {
+    width: 30rem;
+  }
+  .sitemap h2 {
+    font-size: 3.5rem;
   }
 }
 @media screen and (min-width: 768px) {
@@ -803,7 +849,7 @@ h3 {
   .header__nav__ul__li:nth-child(1), .header__nav__ul__li:nth-child(2), .header__nav__ul__li:nth-child(3), .header__nav__ul__li:nth-child(4), .header__nav__ul__li:nth-child(5) {
     transition: none;
   }
-  .footer {
+  .footer__flexContainer {
     flex-direction: row;
   }
   .footer__menu {

@@ -4,6 +4,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    .programming__container__card {
+        width: 25rem;
+    }
 }
 
 .music__section {
@@ -64,14 +68,6 @@
     position: absolute;
     top: 45%;
     left: 0.5rem;
-}
-
-.music__cardContainer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
 }
 
 .programming__container__card__bottom__description {

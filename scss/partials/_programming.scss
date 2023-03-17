@@ -12,7 +12,8 @@
 }
 
 .programming__filter__tags {
-    background-color: #8b8585;
+    background-color: vars.$color-main1;
+    padding: 0.5rem;
     border-radius: 1rem;
     display: flex;
     flex-direction: row;
@@ -23,10 +24,11 @@
     .tag--boton {
         cursor: pointer;
         position: relative;
+        font-weight: bold;
 
         &:hover {
             transform: translateX(1px) translateY(1px);
-            transition: all 0.4s ease-in-out;
+            transition: all 0.2s ease-in-out;
         }
     }
 }
@@ -71,7 +73,7 @@
     align-items: center;
 
     img {
-        width: auto;
+        // width: auto;
         height: 100%;
         transition: all 0.4s ease-in;
     }
@@ -100,11 +102,12 @@
 }
 
 $language-tag: (
-    todo: black,
+    todo: pink,
     html: #0467e9,
     css: limegreen,
     bs: violet,
-    js: yellow
+    js: yellow,
+    php: red,
 );
 
 @each $language, $color in $language-tag {
