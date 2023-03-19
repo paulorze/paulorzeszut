@@ -8,7 +8,7 @@ icon.addEventListener("click", () => {
     links.forEach(link =>{
         link.classList.toggle("fade");
     });
-});
+}, { passive: true } );
 
 
 // Search Filter

@@ -123,7 +123,7 @@
                     podés encontrarlos en <a href="https://www.youtube.com/channel/UCVdJDvHwOuOlpETb8Nl3Pxw">mi canal de YouTube</a>.
                 </h3>
             </section>
-            <section class="music__carouselContainer carousel slide">
+            <section class="music__carouselContainer carousel slide" id="music__carouselContainer">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <iframe src="https://www.youtube.com/embed/STy8kjbkWAc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -135,9 +135,11 @@
                         <iframe src="https://www.youtube.com/embed/YQXvMWojs28" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </div>
                 </div>
-                <button class="carousel__control carousel__control--prev" type="button" data-bs-target="#music__carouselContainer" data-bs-slide="prev">
+                <button class="carousel__control carousel__control--prev" type="button" data-bs-target="#music__carouselContainer" data-bs-slide="prev" aria-label="Botón Anterior">
+                    <span class="visually-hidden">Previous</span>
                 </button>
-                <button class="carousel__control carousel__control--next" type="button" data-bs-target="#music__carouselContainer" data-bs-slide="next">
+                <button class="carousel__control carousel__control--next" type="button" data-bs-target="#music__carouselContainer" data-bs-slide="next" aria-label="Botón Siguiente">
+                    <span class="visually-hidden">Next</span>
                 </button>
             </section>
             <section class="programming__container">
@@ -271,9 +273,9 @@
         <footer class="footer">
             <div class="footer__flexContainer">
                 <div class="footer__menu">
-                    <h4 class="footer__menu__h4">
+                    <p class="footer__menu__p">
                         Menú
-                    </h4>
+                    </p>
                     <ul class="footer__menu__ul">
                         <li class="footer__menu__ul__link ">
                             <a href="../index.html">Inicio</a>
@@ -293,9 +295,9 @@
                     </ul>
                 </div>
                 <div class="footer__redes">
-                    <h4 class="footer__redes__h4">
+                    <p class="footer__menu__p">
                         Encontrame acá...
-                    </h4>
+                    </p>
                     <ul class="footer__redes__ul">
                         <li class="footer__redes__ul__link">
                             <a href="https://www.facebook.com/agustin.rzeszut" target="_blank">

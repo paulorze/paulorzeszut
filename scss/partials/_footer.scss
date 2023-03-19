@@ -5,7 +5,6 @@
     border-top: solid vars.$color-border 0.25rem;
     box-shadow: 1px 1px 10px vars.$color-border;
     margin-top: 1rem;
-    // padding: 1rem;
 }
 
 .footer__flexContainer {
@@ -13,8 +12,6 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    // width: 100%;
-    // padding: 1rem;
 }
 
 .footer__menu {
@@ -24,12 +21,12 @@
     align-items: center;
 }
 
-.footer__menu__h4 {
+.footer__menu__p {
     color: vars.$color-main2;
     font-size: 2.5rem;
     font-weight: bold;
     text-align: center;
-    margin-bottom: 0;
+    padding: 1rem;
 }
 
 .footer__menu__ul {
@@ -47,13 +44,14 @@
     a {
         text-decoration: none;
         color: vars.$color-main2;
-        font-size: 1.5rem;
+        font-size: 1.75rem;
         font-weight: bold;
     }
 
     &:active {
         a {
             color: vars.$color-active;
+            padding: 0.75rem;
         }
     }
 }
@@ -62,13 +60,6 @@
     a {
         color: vars.$color-active;
     }
-}
-
-.footer__redes__h4 {
-    color: vars.$color-main2;
-    font-size: 2.5rem;
-    font-weight: bold;
-    text-align: center;
 }
 
 .footer__redes__ul {

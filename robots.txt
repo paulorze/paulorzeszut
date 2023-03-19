@@ -6,5 +6,4 @@ Allow: /css
 Allow: /images
 Disallow: /private
 
-Sitemap: sitemap.xml
-
+Sitemap: https://paulo.ar/sitemap.xml

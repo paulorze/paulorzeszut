@@ -8,6 +8,11 @@
     h3{
         text-align: justify;
         text-indent: 2rem;
+        font-weight: 300;
+    }
+
+    a {
+        color: vars.$color-highlight;
     }
 }
 
@@ -103,11 +108,11 @@
 
 $language-tag: (
     todo: pink,
-    html: #0467e9,
+    html: #B7BFF8,
     css: limegreen,
     bs: violet,
     js: yellow,
-    php: red,
+    php: #F78282,
 );
 
 @each $language, $color in $language-tag {

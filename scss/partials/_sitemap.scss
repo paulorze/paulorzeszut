@@ -24,6 +24,10 @@
             margin: 1rem;
         }
     }
+
+    a {
+        color: vars.$color-highlight;
+    }
 }
 
 .sitemap__aside__h2, .sitemap__section__h2 {
