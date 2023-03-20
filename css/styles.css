@@ -335,6 +335,10 @@ h3 {
   position: relative;
   margin-top: 2rem;
   margin-bottom: 2rem;
+  height: 4rem;
+}
+.contact__aside__form__line--body {
+  height: 20rem;
 }
 
 .contact__aside__form__input {
@@ -353,7 +357,7 @@ h3 {
   font-size: 1.5rem;
   color: #253151;
   position: absolute;
-  bottom: 1.5rem;
+  bottom: 2rem;
   left: 1.5rem;
   pointer-events: none;
   transform: translateY(1rem);
