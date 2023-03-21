@@ -780,13 +780,11 @@ h3 {
 
 .errorpage {
   background-color: #FEFAE0;
-  padding: 1rem;
+  display: flex;
+  justify-content: center;
 }
 .errorpage img {
-  margin-top: auto;
-  margin-bottom: auto;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
 }
 
 @media screen and (min-width: 320px) {
@@ -1036,6 +1034,10 @@ h3 {
   .programming__container__card:hover .programming__container__card__img img {
     width: auto;
     height: 120%;
+  }
+  .errorpage img {
+    height: 100vh;
+    width: auto;
   }
 }
 
