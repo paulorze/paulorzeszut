@@ -535,13 +535,15 @@ h3 {
 .programming h2 {
   font-size: 2.5rem;
 }
-.programming h3 {
+.programming__section h3 {
   text-align: justify;
   text-indent: 2rem;
   font-weight: 300;
 }
-.programming a {
+.programming__section h3 a {
   color: #2c6cdf;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 .programming__filter__tags {
@@ -681,6 +683,11 @@ h3 {
 .music__section h3 {
   text-align: justify;
   text-indent: 2rem;
+}
+.music__section h3 a {
+  color: #2c6cdf;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 .music__carouselContainer {

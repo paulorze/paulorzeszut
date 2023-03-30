@@ -18,6 +18,12 @@
     h3 {
         text-align: justify;
         text-indent: 2rem;
+
+        a {
+            color: vars.$color-highlight;
+            text-decoration: none;
+            font-weight: bold;
+        }
     }
 }
 
