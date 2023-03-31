@@ -15,7 +15,8 @@
 }
 
 .music__section {
-    h3 {
+    &__p {
+        font-size: 2rem;
         text-align: justify;
         text-indent: 2rem;
 

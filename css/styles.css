@@ -304,6 +304,12 @@ h3 {
   padding: 1rem;
 }
 
+.contact__section__p {
+  font-size: 2rem;
+  text-align: justify;
+  text-indent: 2rem;
+}
+
 .contact__section__ul {
   list-style-type: none;
   display: flex;
@@ -535,12 +541,13 @@ h3 {
 .programming h2 {
   font-size: 2.5rem;
 }
-.programming__section h3 {
+.programming__section p {
+  font-size: 2rem;
   text-align: justify;
   text-indent: 2rem;
   font-weight: 300;
 }
-.programming__section h3 a {
+.programming__section p a {
   color: #2c6cdf;
   text-decoration: none;
   font-weight: bold;
@@ -564,6 +571,13 @@ h3 {
 .programming__filter__tags .tag--boton:hover {
   transform: translateX(1px) translateY(1px);
   transition: all 0.2s ease-in-out;
+}
+
+.programming__filter__text p {
+  font-size: 2rem;
+  text-align: justify;
+  text-indent: 2rem;
+  font-weight: 300;
 }
 
 .programming__container {
@@ -680,11 +694,12 @@ h3 {
   width: 25rem;
 }
 
-.music__section h3 {
+.music__section__p {
+  font-size: 2rem;
   text-align: justify;
   text-indent: 2rem;
 }
-.music__section h3 a {
+.music__section__p a {
   color: #2c6cdf;
   text-decoration: none;
   font-weight: bold;
@@ -741,8 +756,10 @@ h3 {
   line-height: 2.5rem;
 }
 
-.resume h3 {
+.resume p {
+  font-size: 2rem;
   text-align: justify;
+  text-indent: 2rem;
 }
 
 .resume__container-fluid {
@@ -758,6 +775,10 @@ h3 {
   line-height: 3.5rem;
   padding: 1rem;
 }
+.resume__aside h3, .resume__section h3 {
+  font-size: 3rem;
+  font-weight: bold;
+}
 
 .sitemap h2 {
   margin-top: 1rem;
@@ -765,8 +786,15 @@ h3 {
   font-size: 3rem;
 }
 .sitemap h3 {
-  text-align: justify;
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
   text-indent: 2rem;
+}
+.sitemap p {
+  font-size: 2rem;
+  text-indent: 2rem;
+  text-align: justify;
 }
 .sitemap ul {
   display: flex;

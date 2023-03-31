@@ -6,7 +6,8 @@
     }
 
     &__section {
-        h3{
+        p {
+            font-size: 2rem;
             text-align: justify;
             text-indent: 2rem;
             font-weight: 300;
@@ -40,6 +41,15 @@
             transform: translateX(1px) translateY(1px);
             transition: all 0.2s ease-in-out;
         }
+    }
+}
+
+.programming__filter__text {
+    p {
+        font-size: 2rem;
+        text-align: justify;
+        text-indent: 2rem;
+        font-weight: 300;
     }
 }
 
