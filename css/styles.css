@@ -675,6 +675,11 @@ h3 {
   color: #F78282;
 }
 
+.tag--python {
+  border: 1px solid #E1E2E6;
+  color: #E1E2E6;
+}
+
 .programming__container__card__bottom__description {
   color: #FEFAE0;
   font-size: 1.5rem;

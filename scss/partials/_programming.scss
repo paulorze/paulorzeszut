@@ -93,7 +93,6 @@
     align-items: center;
 
     img {
-        // width: auto;
         height: 100%;
         transition: all 0.4s ease-in;
     }
@@ -128,6 +127,7 @@ $language-tag: (
     bs: violet,
     js: yellow,
     php: #F78282,
+    python: #E1E2E6
 );
 
 @each $language, $color in $language-tag {
